@@ -39,7 +39,31 @@
     <h1 class="page-title">Магазин готовых шаблонов</h1>
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--Здесь будет форма-->
+      <!--Форма-->
+      <form>
+        <h3>Сетка</h3>
+<!--Радио-->
+        <label for="adaptive">Адаптивная</label>
+          <input id="adaptive" type="radio" value="adaptive" name="radio-filter">
+            <label for="fixed">Фиксированная</label>
+              <input id="fixed" type="radio" value="fixed" name="radio-filter">
+                <label for="rubber">Резиновая</label>
+                  <input id="rubber" type="radio" value="rubber" name="radio-filter">
+<!--Чекбоксы-->
+      <h3>Особенности</h3>
+        <label for="slider">Слайдер</label>
+          <input id="slider" type="checkbox">
+            <label for="block">Блок преимуществ</label>
+              <input id="block" type="checkbox">
+                <label for="news">Новости</label>
+                  <input id="news" type="checkbox">
+                    <label for="galery">Галерея</label>
+                      <input id="galery" type="checkbox">
+                        <label for="basket">Корзина</label>
+                          <input id="basket" type="checkbox">
+                            <label for="filter-submit"></label>
+                              <input class="filter-submit" type="submit" value="Показать">
+      </form>
     </section>
     <!--Sedona-->
     <section class="catalog">
@@ -117,6 +141,17 @@
         </li>
       </ul>
     </section>
+    <!--Попап-->
+      <h4>Напишите нам:</h4>
+      <form  class="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <label for="user-name">Ваше имя</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+            <label for="user-emale">Ваш e-male</label>
+              <input id="user-emale" type="text" name="emale" placeholder="emale@example.com">
+                <label for="user-feedback">Текст письма</label>
+                  <textarea id="user-feedback" type="text-area" placeholder="В свободной форме"></textarea>
+                    <input class="feedback-submit" type="submit">
+      </form>
     <footer>
       <h4>Давайте дружить, это выгодно!</h4>
       <ul class="social">
