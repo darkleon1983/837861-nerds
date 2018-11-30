@@ -1,10 +1,19 @@
+.site-navigation {
+  list-style: none;
+}
+.services {
+  list-style: none;
+}
+.user-navigation {
+  list-style: none; 
+}
 .order-site {
   text-align: center;
   vertical-align: middle;
   font-size: 30px;
   font-family: "Calibri";
   color: white;
-  background-color: #fb565a;
+  background-color: rgba(251, 86, 90, 1);
   padding: 5px;
   border-radius: 2px;
   text-transform: uppercase;
@@ -40,4 +49,23 @@
   width: 192px;
   height: 50px;
   margin: 10px;
+}
+.buy-templ-calm {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  font-family: "Calibri";
+  color: white;
+  background-color: rgba(251, 86, 90, 1);
+  padding: 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 192px;
+  height: 50px;
+  margin: 10px;
+}
+.templ-active {
+  font-family: "Sedona";
+  background-color: rgba(238, 238, 238, 1);
 }
