@@ -1,3 +1,18 @@
+body {
+  font-family: "Roboto", Regular, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform:;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.main-navigation {
+  background-color: rgba(238, 238, 238, 1);
+}
 .site-navigation {
   list-style: none;
 }
@@ -7,11 +22,58 @@
 .user-navigation {
   list-style: none; 
 }
+.social {
+  list-style: ;
+}
+.main-navigation a:hover,
+.main-navigation a:focus{
+  color: red;
+}
+.services {
+  text-align: center;
+}
+.services h3 {
+  font-size: ;
+  line-height: ;  
+}
+.page-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+/*Кнопка попапа*/
+.feedback-submit {
+  font: inherit;
+  color: #ffffff;
+  background-color: red;
+  width: 192px;
+  height: 50px;
+  margin: 10px;
+}
+/*Кнопки соц. сетей*/
+.social-button {
+  background-color: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  vertical-align: center;
+}
+/*Кнопка фильтра inner*/
+.filter-submit {
+  font: inherit;
+  width: 192px;
+  height: 50px;
+  margin: 10px;
+}
+.filter-submit button:hover,
+.filter-submit a:focus {
+  color: red;
+}
 .order-site {
   text-align: center;
   vertical-align: middle;
   font-size: 30px;
-  font-family: "Calibri";
+  font-family: "Roboto" sans-serif;
   color: white;
   background-color: rgba(251, 86, 90, 1);
   padding: 5px;
@@ -24,7 +86,7 @@
 }
 .order-app {
   text-align: center;
-  font-family: "Calibri";
+  font-family: "Roboto";
   font-size: 30px;
   color: white;
   background-color: #00ca74;
@@ -39,7 +101,7 @@
 .order-pres {
   text-align: center;
   font-size: 30px;
-  font-family: "Calibri";
+  font-family: "Roboto";
   color: white;
   background-color: #efc849;
   padding: 5px;
@@ -54,7 +116,7 @@
   text-align: center;
   vertical-align: middle;
   font-size: 30px;
-  font-family: "Calibri";
+  font-family: "Roboto";
   color: white;
   background-color: rgba(251, 86, 90, 1);
   padding: 5px;
@@ -66,6 +128,8 @@
   margin: 10px;
 }
 .templ-active {
-  font-family: Roboto;
+  font-family: "Roboto";
   background-color: rgba(238, 238, 238, 1);
 }
+
+
