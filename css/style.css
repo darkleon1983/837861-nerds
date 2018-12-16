@@ -1,8 +1,8 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
+  /*font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 700;*/
   color: #000000;
   text-transform:;
 }
@@ -12,17 +12,22 @@ a {
 }
 /*Меню*/
 .main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
   background-color: rgba(238, 238, 238, 1);
   display: flex;
   /*flex-direction: column;*/
   align-items: center;
   outline: 1px solid red;
+  margin-bottom: 80px;
 }
 .main-navigation-wrapper .conteiner {
   display: flex;
   justify-content: space-between;
 }
 .site-navigation {
+  font-family: "Roboto" regular sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,6 +46,10 @@ a {
   min-height: 153px;
   outline: 1px solid red;
 }
+.main-header-logo a:hover,
+.main-header-logo a:focus,{
+ 
+}
 .social {
   list-style: none;
 }
@@ -48,11 +57,15 @@ a {
 .main-navigation a:hover,
 .main-navigation a:focus{
   color: rgba(251, 86, 90, 1);
-
+}
+/*Скрытые заголовки*/
+.visually-hidden {
+  display: none;
 }
 /*Услуги*/
 .services {
-  text-align: center;
+  width: 100%;
+  text-align: left;
   list-style: none;
   outline: 1px solid red;
   margin: 0px;
@@ -60,6 +73,31 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.service-site {
+
+}
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+.site-block {
+  width: 300px;
+  margin-left: 10px;
+}
+.app-block {
+  width: 300px;
+  margin-left: 70px;
+}
+.pres-block {
+  width: 300px;
+  margin-right: 10px;
+}
+/*.services-block {
+display: flex;
+}*/
+/*.services-item {
+  width: 300px;
+}*/
 /*.services h3 {
   font-size: 20px;
   line-height: 30px;*/  
@@ -129,8 +167,8 @@ a {
   border-radius: 2px;
   text-transform: uppercase;
   display: inline-block;
-  width: 192px;
-  margin: 10px;
+  width: 160px;
+  margin: 0px;
   }
 .order-button-site {
   background-color: rgba(251, 86, 90, 1);
@@ -174,7 +212,7 @@ a {
   /*margin-bottom: 60px;*/
 }
 .conteiner {
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   outline: 1px solid red;
@@ -195,3 +233,30 @@ a {
   margin: 0px;
   padding: 0px;
 }*/
+.catalog {
+  outline: 0px solid red;
+  width: 1000px;
+}
+.catalog-list {
+	margin-left: 100px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  width: auto;
+  justify-content: space-between;
+}
+.catalog-item {
+  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
+  position: relative;
+}
+.templ-active {
+  height: 250px;
+  width: 360px;
+  display: noe;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
