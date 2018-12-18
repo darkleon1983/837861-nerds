@@ -17,7 +17,6 @@ a {
   line-height: 30px;
   background-color: rgba(238, 238, 238, 1);
   display: flex;
-  /*flex-direction: column;*/
   align-items: center;
   outline: 1px solid red;
   margin-bottom: 80px;
@@ -27,7 +26,10 @@ a {
   justify-content: space-between;
 }
 .site-navigation {
-  font-family: "Roboto" regular sans-serif;
+  font-family: "Roboto", "Arial", regular, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,6 +48,12 @@ a {
   min-height: 153px;
   outline: 1px solid red;
 }
+.page-title {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
 .main-header-logo a:hover,
 .main-header-logo a:focus,{
  
@@ -57,6 +65,7 @@ a {
 .main-navigation a:hover,
 .main-navigation a:focus{
   color: rgba(251, 86, 90, 1);
+
 }
 /*Скрытые заголовки*/
 .visually-hidden {
@@ -64,6 +73,10 @@ a {
 }
 /*Услуги*/
 .services {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   width: 100%;
   text-align: left;
   list-style: none;
@@ -72,6 +85,13 @@ a {
   padding: 0px;
   display: flex;
   justify-content: space-between;
+}
+.service-headline {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .service-site {
 
@@ -91,16 +111,6 @@ a {
 .pres-block {
   width: 300px;
   margin-right: 10px;
-}
-/*.services-block {
-display: flex;
-}*/
-/*.services-item {
-  width: 300px;
-}*/
-/*.services h3 {
-  font-size: 20px;
-  line-height: 30px;*/  
 }
 .page-title {
   text-align: center;
@@ -125,6 +135,19 @@ display: flex;
   text-align: center;
   position: relative;
 }
+.footer-lozung {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.footer-discount {
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+.footer-list {
+  list-style: none;
+}
 .circle-button {
   position: absolute;
   top: 25%;
@@ -144,24 +167,41 @@ display: flex;
 }
 /*Кнопка фильтра inner*/
 .filter-submit {
-  font: inherit;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   min-width: 192px;
   min-height: 50px;
   margin: 10px;
+  background-color: rgba(238, 238, 238, 1);
+  border-radius: 5px;
+}
+.range {
+font-family: "Roboto", "Arial", sans-serif;
+font-size: 18px;
+line-height: 30px;
+font-weight: 700;
+}
+.form-filter {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(40, 49, 54, 1);
 }
 .filter-submit button:hover,
 .filter-submit a:focus {
   color: red;
 }
-/*a:active {
-  text-decoration: underline;
-}*/
 /*Кнопка ""Заказать* Сайт на index*/
 .order-button {
   text-align: center;
   vertical-align: middle;
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
   color: white;
   padding: 15px;
   border-radius: 2px;
@@ -217,28 +257,13 @@ display: flex;
   padding: 0 10px;
   outline: 1px solid red;
 }
-
 /*Временно для сетки*/
-
-/*.services-item {
-  outline: 1px solid red;
-  width: 300px;
-}
-.catalog-item {
-  outline: 1px solid red;
-}
-
-.discount {
-  outline: 1px solid red;
-  margin: 0px;
-  padding: 0px;
-}*/
 .catalog {
-  outline: 0px solid red;
+  outline: 1px solid red;
   width: 1000px;
 }
 .catalog-list {
-	margin-left: 100px;
+  margin-left: 100px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -248,15 +273,15 @@ display: flex;
 }
 .catalog-item {
   justify-content: space-between;
-  /*display: flex;
-  justify-content: space-between;*/
   position: relative;
 }
 .templ-active {
+  text-align: center;
   height: 250px;
   width: 360px;
-  display: noe;
+  display: none;
   position: absolute;
   top: 50%;
   left: 0%;
+  margin: 10px;
 }

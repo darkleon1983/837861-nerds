@@ -40,8 +40,11 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 <!--Форма-->
-        <form>
-          <h3>Сетка</h3>
+        <form class="form-fil">
+          <!--Бегунок-->
+          <label class="range">Стоимость</label>
+          <input type="range" min="0" max="15000" step="50" value="1000">
+          <h3 class="range">Сетка</h3>
 <!--Радио-->
           <label for="adaptive">Адаптивная</label>
           <input id="adaptive" type="radio" value="adaptive" name="radio-filter">
@@ -50,7 +53,7 @@
           <label for="rubber">Резиновая</label>
           <input id="rubber" type="radio" value="rubber" name="radio-filter">
 <!--Чекбоксы-->
-          <h3>Особенности</h3>
+          <h3 class="range">Особенности</h3>
           <label for="slider">Слайдер</label>
           <input id="slider" type="checkbox">
           <label for="block">Блок преимуществ</label>
@@ -154,9 +157,13 @@
       </form>
 <!--Footer-->      
     <footer class="main-footer">
-      <h4>Давайте дружить, это выгодно!</h4>
+      <ul class="footer-list">
+        <li class="footer-lozung">Давайте дружить, это выгодно!</li>
+        <li class="footer-discount">Скидка 10% для друзей из социальных сетей</li>
+      </ul>
+      <!--<h4>Давайте дружить, это выгодно!</h4>-->
       <ul class="social">
-        <div class="footer-social container">
+        <div class="footer-social">
         <li>
           <h4 class="visually-hidden">Ссылка на группу ВКонтакте</h4>
         </li>
