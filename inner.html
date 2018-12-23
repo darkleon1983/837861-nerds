@@ -8,43 +8,53 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+     <header class="main-header">
+      <h1 class="visually-hidden">Студия web-разработки Нёрдс</h1>
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+<!--Логотип-->
+        <a class="main-header-logo">          
           <img src="img/index-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
         </a>
 <!--Меню-->
-        <ul class="site-navigation">
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a>Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
-          </li>
-        </ul>
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <div class="header-classes">
+        <div class="main-navigation-wrapper">
+          <div class="conteiner">
+            <ul class="site-navigation">
+              <li class="menu-item">
+                <a href="#">Студия</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-headline">
+          <h2>Магазин готовых шаблонов</h2>
+        </div>
+      </div>
       </nav>
     </header>
     <main class="conteiner">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 <!--Форма-->
-        <form class="form-fil">
+        <form class="form-filter">
           <!--Бегунок-->
-          <label class="range">Стоимость</label>
+          <!--<label class="range">Стоимость</label>
           <input type="range" min="0" max="15000" step="50" value="1000">
-          <h3 class="range">Сетка</h3>
+          <h3 class="range">Сетка</h3>-->
 <!--Радио-->
           <label for="adaptive">Адаптивная</label>
           <input id="adaptive" type="radio" value="adaptive" name="radio-filter">
@@ -80,8 +90,8 @@
               </a>
               <p>Информационный сайт для туристов Sedona</p>
               <a href="templ-sedona.html" class="buy-templ-calm">9900 руб.</a>
+            </div>
           </li>
-        </div>
     <!--Pink-->
           <li class="catalog-item">
             <h3 class="visually-hidden">Жизнерадостное приложение Pink</h3>
@@ -143,7 +153,7 @@
             </div>
           </li>
         </ul>
-  </section>
+      </section>
 <!--Попап-->
       <h4>Напишите нам:</h4>
       <form  class="feedback" action="https://echo.htmlacademy.ru" method="post">
@@ -157,13 +167,9 @@
       </form>
 <!--Footer-->      
     <footer class="main-footer">
-      <ul class="footer-list">
-        <li class="footer-lozung">Давайте дружить, это выгодно!</li>
-        <li class="footer-discount">Скидка 10% для друзей из социальных сетей</li>
-      </ul>
       <!--<h4>Давайте дружить, это выгодно!</h4>-->
+    <div class="footer-social">
       <ul class="social">
-        <div class="footer-social">
         <li>
           <h4 class="visually-hidden">Ссылка на группу ВКонтакте</h4>
         </li>
@@ -182,8 +188,12 @@
         <li class="social-button">
           <a href="https://www.instagram.com/e_korolev/?hl=ru"><img class="circle-butto" src="img/insta-icon.svg" alt="Instagram"></a>
         </li>
-        </div>
       </ul>
+      <ul class="footer-list">
+        <li class="footer-lozung">Давайте дружить, это выгодно!</li>
+        <li class="footer-discount">Скидка 10% для друзей из социальных сетей</li>
+      </ul>
+    </div>
     </footer>
       <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
     </main>

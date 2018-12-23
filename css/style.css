@@ -11,6 +11,19 @@ a {
   color: #000000;
 }
 /*Меню*/
+.header-classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.header-headline {
+  outline: 1px solid red;
+  flex-direction: column;
+  /*margin: 10px;*/
+}
+/*.no-margin {
+  margin: 100px;
+}*/
 .main-navigation {
   font-weight: 500;
   font-size: 16px;
@@ -35,13 +48,23 @@ a {
   padding: 0;
   width: 620px;
   outline: 1px solid red;
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+}
+.menu-item {
+  justify-content: space-between;
 }
 .user-navigation {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 140px;
+  width: 120px;
   outline: 1px solid red;
+  display: flex;
+}
+.basket {
+  justify-content: flex-end;
 }
 .main-header-logo {
   min-width: 368px;
@@ -134,6 +157,7 @@ a {
   border-radius: 50%;
   text-align: center;
   position: relative;
+  margin-right: 10px;
 }
 .footer-lozung {
   font-family: "Roboto", "Arial", sans-serif;
@@ -147,6 +171,7 @@ a {
 }
 .footer-list {
   list-style: none;
+  margin-left: 100px;
 }
 .circle-button {
   position: absolute;
@@ -164,6 +189,9 @@ a {
   outline: 1px solid red;
   margin: 0px;
   padding: 0px;
+}
+.social {
+  display: flex;
 }
 /*Кнопка фильтра inner*/
 .filter-submit {
@@ -285,3 +313,9 @@ font-weight: 700;
   left: 0%;
   margin: 10px;
 }
+/*.main-content {
+  display: flex;
+}
+.form {
+  outline: 1px solid red;
+}*/
