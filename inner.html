@@ -8,45 +8,50 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-     <header class="main-header">
-      <h1 class="visually-hidden">Студия web-разработки Нёрдс</h1>
-      <nav class="main-navigation">
+    <header class="main-header">
+      <div>
+        <h1 class="visually-hidden">Студия web-разработки Нёрдс</h1>
+        <nav class="main-navigation main-navigation-inner">
 <!--Логотип-->
-        <a class="main-header-logo">          
-          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
-        </a>
-<!--Меню-->
-      <div class="header-classes">
-        <div class="main-navigation-wrapper">
-          <div class="conteiner">
-            <ul class="site-navigation">
-              <li class="menu-item">
-                <a href="#">Студия</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">Клиенты</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">Магазин</a>
-              </li>
-              <li class="menu-item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="user-navigation">
-              <li>
-                <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
-              </li>
-            </ul>
+          <div class="site-logo">
+            <a class="main-header-logo">          
+              <img src="img/index-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
+            </a>
           </div>
-        </div>
-        <div class="header-headline">
-          <h2>Магазин готовых шаблонов</h2>
-        </div>
+<!--Меню-->
+          <div class="header-classes">
+            <div class="main-navigation-wrapper">
+              <div class="conteiner">
+                <ul class="site-navigation">
+                  <li class="menu-item">
+                    <a href="#">Студия</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Клиенты</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Магазин</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="user-navigation">
+                  <li>
+                    <a href="#"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-headline">
+              <h2>Магазин готовых шаблонов</h2>
+            </div>
+          </div>
+        </nav>
       </div>
-      </nav>
     </header>
     <main class="conteiner">
+    <div class="main-content">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 <!--Форма-->
@@ -56,26 +61,46 @@
           <input type="range" min="0" max="15000" step="50" value="1000">
           <h3 class="range">Сетка</h3>-->
 <!--Радио-->
-          <label for="adaptive">Адаптивная</label>
+        <div class="radio">
+        <div class="lab">
           <input id="adaptive" type="radio" value="adaptive" name="radio-filter">
-          <label for="fixed">Фиксированная</label>
+          <label for="adaptive">Адаптивная</label>
+        </div>
+        <div class="lab">
           <input id="fixed" type="radio" value="fixed" name="radio-filter">
-          <label for="rubber">Резиновая</label>
+          <label for="fixed">Фиксированная</label>
+        </div>
+        <div class="lab">
           <input id="rubber" type="radio" value="rubber" name="radio-filter">
+          <label for="rubber">Резиновая</label>
+        </div>
+        </div>
 <!--Чекбоксы-->
           <h3 class="range">Особенности</h3>
-          <label for="slider">Слайдер</label>
+        <div class="che">
           <input id="slider" type="checkbox">
-          <label for="block">Блок преимуществ</label>
+          <label for="slider">Слайдер</label>
+        </div>
+        <div class="che">
           <input id="block" type="checkbox">
-          <label for="news">Новости</label>
+          <label for="block">Блок преимуществ</label>
+        </div>
+        <div class="che">
           <input id="news" type="checkbox">
-          <label for="galery">Галерея</label>
+          <label for="news">Новости</label>
+        </div>
+        <div class="che">
           <input id="galery" type="checkbox">
-          <label for="basket">Корзина</label>
+          <label for="galery">Галерея</label>
+        </div>
+        <div class="che">
           <input id="basket" type="checkbox">
+          <label for="basket">Корзина</label>
+        </div>
+        <div class="che">
           <label for="filter-submit-style"></label>
           <input id="filter-submit-style" class="filter-submit" type="submit" value="Показать">
+        </div>
         </form>
       </section>
 <!--Sedona-->
@@ -154,6 +179,7 @@
           </li>
         </ul>
       </section>
+    </div>
 <!--Попап-->
       <h4>Напишите нам:</h4>
       <form  class="feedback" action="https://echo.htmlacademy.ru" method="post">
