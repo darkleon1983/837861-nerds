@@ -61,13 +61,17 @@ img {
   margin: 0;
   padding-top: 10px;
   height: 35px;
-  outline: 1px solid red;
+  outline: 10px solid red;
   display: flex;
   width: 480px;/*по шаблону 440px*/
   justify-content: space-between;
   /*flex-wrap: wrap;
   width: 620px;*/
   background: rgba(234, 255, 45, 0.2);
+}
+.basket-box {
+  margin: 0;
+  height: 35px; 
 }
 /*Вариант оформления пунктов меню*/
 
@@ -77,9 +81,11 @@ img {
 .menu-item {
 margin-left: 50px;
 }
-.menu-item:active {
-  border-bottom: 3px solid red;
+.menu-item a:active,
+.user-navigation a:active {
+  color: rgba(189, 189, 189, 1);
 }
+
 .user-navigation .login-link {
   position: relative;
   padding-left: 30px;
@@ -88,35 +94,23 @@ margin-left: 50px;
   margin: 0px;
   list-style: none;
   display: flex;
-  /*background-color: rgba(251, 86, 90, 0.4);*/
   width: auto;
   outline: 0px solid red;
 }
-.login-link:;before {
-/*position: relative;
-width: 16px;
-height: 20px;
-/*background-color: rgba(251, 86, 90, 0.5);*/
-/*position: absolute;
-left: 50px;
-top: 5px;*/
-/*background-image: url("img/cart-icon.svg");
-background-repeat: no-repeat;
-background-position: 0 0;
-opacity: 0.3;*/
+.login-link::before {
 }
 .basket {
   position: absolute;
   top: 7px;
   left: 5px;
 }
-.login-link:hover::before,
+/*.login-link:hover::before,
 .login-link:focus::before,
-.login-link:active::before {
-  /*opacity: 1;*/
+/*.login-link:active::before */{
+  color: rgba(189, 189, 189, 1);*/
 }
-.login-link:active {
-  border-bottom: 3px solid red ;
+/*.login-link a:active {
+  border-bottom: 30px solid rgba(251, 86, 90, 1);*/
 }
 /*.basket {
   justify-content: flex-end5
@@ -124,7 +118,7 @@ opacity: 0.3;*/
 .main-header-logo {
   min-width: 368px;
   min-height: 153px;
-  outline: 1px solid red;
+  outline: 10px solid red;
 }
 .page-title {
   font-family: "Roboto", "Arial", sans-serif;
@@ -147,7 +141,7 @@ opacity: 0.3;*/
   color: rgba(250, 100, 103, 1);
 }
 .site-navigation a:active {
-  color: rgba(800, 100, 103, 1);
+  color: gray;
 }
 /*Скрытые заголовки*/
 .visually-hidden:not(:focus):not(:active),
@@ -160,9 +154,7 @@ input [type="radio"].visually-hidden {
    margin: -1px;
    border: 0px;
    padding: 1px;
-
    white-space: nowrap;
-
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
@@ -211,7 +203,10 @@ input [type="radio"].visually-hidden {
 }
 /*Кнопка попапа*/
 .feedback-submit {
-  font: inherit;
+  font-family: "Roboto", "Arial", regular, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
   text-transform: uppercase;
   color: white;
   background-color: rgba(251, 86, 90, 1);
@@ -364,6 +359,7 @@ font-weight: 700;
   /*margin-bottom: 60px;*/
 }
 .conteiner {
+  height:;
   width: 100%;
   margin: 0px;
   padding: 0 10px;
@@ -417,6 +413,29 @@ font-weight: 700;
 .site-logo {
   margin-top: 50px;
 }
-.conteiner {
-  
+.modal {
+  font-family: "Roboto", "Arial", regular, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  position: fixed;
+}
+.modal-feedback {
+  width: 960px;
+  height: 590px;
+  padding: 50px 100px;
+  padding-bottom: 85px;
+  outline: 10px solid red;
+  top: 120px;
+  left: 240px;
+  background-color: rgba(255, 255, 255, 1);
+}
+/*.div-feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+.big {
+	font-size: 30px;
+  line-height: 50px;
 }
